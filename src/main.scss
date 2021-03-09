@@ -1,0 +1,80 @@
+html {
+  font-size: 10px;
+}
+body {
+  background: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#entry-point {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  // width: 40rem;
+  font-size: 2px;
+}
+.container {
+  margin: 1rem;
+  background: orange;
+  padding: 1rem;
+  // width: 40rem;
+  font-size: 2px;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  background-color: white;
+  color: dimgray;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1px 0;
+  font-weight: bold;
+  &.marked {
+    position: relative;
+    &:before {
+      content: "";
+      border: 0.2rem red solid;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      display: block;
+      position: absolute;
+      top: 0.4rem;
+      left: 0.3rem;
+    }
+    color: black;
+  }
+}
+
+.table {
+  display: table;
+  margin-top: 1rem;
+  .tr {
+    display: table-row;
+  }
+  .td {
+    display: table-cell;
+    width: 5rem;
+    height: 4rem;
+  }
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+#genBtn {
+  background-color: green;
+  border-radius: 0.5rem;
+  color: white;
+  border-style: none;
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+  &:hover {
+    background-color: forestgreen;
+  }
+}
